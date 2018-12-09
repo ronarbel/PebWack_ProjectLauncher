@@ -16,8 +16,8 @@
 ### creates directory structure ###
 ###################################
 cd ~/Desktop
-mkdir YourNewWebpackReactProject
-cd YourNewWebpackReactProject
+mkdir New_PebWack_Project
+cd New_PebWack_Project
 touch webpack.config.js
 touch index.html
 mkdir src
@@ -34,16 +34,6 @@ cd .. ..
 cd ..
 npm i -g live-server
 
-#########################
-### downloads modules ###
-#########################
-npm init -y
-npm i webpack webpack-cli --save-dev
-npm i -D babel-loader @babel/core @babel/preset-env webpack
-npm i react
-npm i react-dom
-npm i -D @babel/preset-react
-
 ################################
 ### opens files to be edited ###
 ################################
@@ -53,3 +43,13 @@ cd src
 open index.jsx
 cd componenets
 open App.jsx
+
+#########################
+### downloads modules ###
+#########################
+npm init -y
+npm i webpack webpack-cli --save-dev
+npm i -D babel-loader @babel/core @babel/preset-env webpack
+npm i react
+npm i react-dom
+npm i -D @babel/preset-react

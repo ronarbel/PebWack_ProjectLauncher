@@ -7,14 +7,20 @@ Three steps:
 
 STEP 1:
   * From terminal, navigate into the PebWack_ProjectLauncher directory.
-  * Run ' ./NewProject.txt ' (this will take a moment to download all modules).
+  * Run ' ./NewProject.txt ' (this will take a moment as it's literally doing all the things automatically).
+  * New_Pebwack_Project will be created on your Desktop.
 
 STEP 2:
-  * Four files will open in your text editor.
-    - In package.json:
-      * Add and save the following property to the scripts object: "build": "webpack --watch"
-    - In index.jsx:
-      * Copy and save the following:
+  * Four files will open in your text editor. *YOU WILL EDIT 5 FILES TOTAL*
+    1. In package.json:
+    
+        --------------------------------
+      - Add and save the following property to the scripts object: "build": "webpack --watch"
+        --------------------------------
+
+    2. In index.jsx:
+      - Copy and save the following:
+
         --------------------------------
         import React from 'react';
         import ReactDOM from 'react-dom';
@@ -25,8 +31,10 @@ STEP 2:
           document.getElementById('root')
         );
         --------------------------------
-    - In App.jsx:
-      * Copy and save the following:
+
+    3. In App.jsx:
+      - Copy and save the following:
+
         --------------------------------
         import React from 'react';
 
@@ -44,8 +52,10 @@ STEP 2:
 
         export default App; 
         --------------------------------
-    - In webpack.config.js:
-      * Copy and save the following:
+
+    4. In webpack.config.js:
+      - Copy and save the following:
+
         --------------------------------
         const path = require('path');
 
@@ -77,8 +87,10 @@ STEP 2:
           }
         };
         --------------------------------
-    - A new folder 'YourNewWebpackReactProject will exist on your desktop. Manually open index.html in your text editor:
-      * Copy and save the following:
+
+    5. A new folder 'New_PebWack_Project' will exist on your desktop. Manually open index.html in your text editor:
+      - Copy and save the following:
+
         --------------------------------
         <!DOCTYPE html>
           <html lang="en">
@@ -92,9 +104,9 @@ STEP 2:
         --------------------------------
 
 STEP 3:
-  * In terminal, navigate into 'YourNewWebpackReactProject'.
+  * In terminal, navigate into 'New_PebWack_Project'.
   * Run ' npm run build '.
-  * Run ' live-server '.
+  * In a new terminal tab, run ' live-server '.
 
 
-Done! The folder 'YourNewWebpackReactProject' will have all modules/dependencies fully loaded.  Inside, src/components/app.jsx contains "Hello World". Change this folder to your app name, and repeat Step 3 when you want to run your app.
+Done! The folder 'New_Pebwack_Project' will have all modules/dependencies fully loaded.  Inside, src/components/app.jsx contains "Hello World". Change the root folder to your app name, and repeat Step 3 when you want to run your app.
