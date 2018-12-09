@@ -1,0 +1,45 @@
+### FOLLOW README ###
+
+#!/bin/sh
+###################################
+### creates directory structure ###
+###################################
+cd ~/Desktop
+mkdir YourNewWebpackReactProject
+cd YourNewWebpackReactProject
+touch webpack.config.js
+touch index.html
+mkdir src
+mkdir public
+cd public
+touch bundle.js
+cd ..
+cd src
+touch index.jsx
+mkdir componenets
+cd componenets
+touch App.jsx
+cd .. ..
+cd ..
+npm i -g live-server
+
+#########################
+### downloads modules ###
+#########################
+npm init -y
+npm i webpack webpack-cli --save-dev
+npm i -D babel-loader @babel/core @babel/preset-env webpack
+npm i react
+npm i react-dom
+npm i -D @babel/preset-react
+
+################################
+### opens files to be edited ###
+################################
+open package.json
+cd src
+open index.jsx
+cd componenets
+open App.jsx
+cd .. ..
+open webpack.config.js
