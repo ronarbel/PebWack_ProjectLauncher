@@ -28,7 +28,7 @@ cd ..
 cd src
 touch index.jsx
 mkdir components
-cd componenets
+cd components
 touch App.jsx
 cd .. ..
 cd ..
