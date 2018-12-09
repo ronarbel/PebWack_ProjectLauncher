@@ -1,4 +1,15 @@
-### FOLLOW README ###
+################################
+### !!! IGNORE THIS FILE !!! ###
+################################
+
+#########################
+### FOLLOW THE README ###
+#########################
+
+
+
+
+
 
 #!/bin/sh
 ###################################
@@ -37,9 +48,8 @@ npm i -D @babel/preset-react
 ### opens files to be edited ###
 ################################
 open package.json
+open webpack.config.js
 cd src
 open index.jsx
 cd componenets
 open App.jsx
-cd .. ..
-open webpack.config.js

@@ -6,7 +6,7 @@ Three steps:
   3. Launch app.
 
 STEP 1:
-  * From terminal, navigate into the WebpackReact_ProjectLauncher directory.
+  * From terminal, navigate into the PebWack_ProjectLauncher directory.
   * Run ' ./NewProject.txt ' (this will take a moment to download all modules).
 
 STEP 2:
