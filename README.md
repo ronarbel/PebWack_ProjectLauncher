@@ -1,4 +1,4 @@
-Goals: Create a new directory with webpack/node modules fully loaded, and render 'Hello World' in the browser.
+Goals: Create a new directory with webpack/react/node modules fully loaded, and render 'Hello World' in the browser.
 
 Three steps: 
   1. Create directory structure.
