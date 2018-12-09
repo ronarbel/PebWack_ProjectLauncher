@@ -27,27 +27,26 @@ touch bundle.js
 cd ..
 cd src
 touch index.jsx
-mkdir componenets
+mkdir components
 cd componenets
 touch App.jsx
 cd .. ..
 cd ..
 npm i -g live-server
 
+############################
+### creates package.json ###
+############################
+npm init -y
+
 ################################
 ### opens files to be edited ###
 ################################
-open package.json
-open webpack.config.js
-cd src
-open index.jsx
-cd componenets
-open App.jsx
+open .
 
 #########################
 ### downloads modules ###
 #########################
-npm init -y
 npm i webpack webpack-cli --save-dev
 npm i -D babel-loader @babel/core @babel/preset-env webpack
 npm i react

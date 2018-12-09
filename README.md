@@ -11,46 +11,26 @@ STEP 1:
   * New_Pebwack_Project will be created on your Desktop.
 
 STEP 2:
-  * Four files will open in your text editor. *YOU WILL EDIT 5 FILES TOTAL*
+  * Your New_PebWack_Project directory will open. *EDIT THE FOLLOWING 5 FILES*
     1. In package.json:
-    
+
         --------------------------------
       - Add and save the following property to the scripts object: "build": "webpack --watch"
         --------------------------------
 
-    2. In index.jsx:
+    2. In index.html:
       - Copy and save the following:
 
         --------------------------------
-        import React from 'react';
-        import ReactDOM from 'react-dom';
-        import App from './components/App.jsx';
-
-        ReactDOM.render(
-          <App />,
-          document.getElementById('root')
-        );
-        --------------------------------
-
-    3. In App.jsx:
-      - Copy and save the following:
-
-        --------------------------------
-        import React from 'react';
-
-        class App extends React.Component {
-          constructor(props) {
-            super(props);
-          }
-          
-          render() {
-            return (
-              <h1>Hello World</h1>
-            );
-          }	
-        }
-
-        export default App; 
+        <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          </head>
+        <body>
+	        <div id="root"></div>
+	        <script src="./public/bundle.js"></script>
+        </body>
+        </html>
         --------------------------------
 
     4. In webpack.config.js:
@@ -88,19 +68,39 @@ STEP 2:
         };
         --------------------------------
 
-    5. A new folder 'New_PebWack_Project' will exist on your desktop. Manually open index.html in your text editor:
+    5. In src/index.jsx:
       - Copy and save the following:
 
         --------------------------------
-        <!DOCTYPE html>
-          <html lang="en">
-          <head>
-          </head>
-        <body>
-	        <div id="root"></div>
-	        <script src="./public/bundle.js"></script>
-        </body>
-        </html>
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+        import App from './components/App.jsx';
+
+        ReactDOM.render(
+          <App />,
+          document.getElementById('root')
+        );
+        --------------------------------
+
+    5. In src/components/App.jsx:
+      - Copy and save the following:
+
+        --------------------------------
+        import React from 'react';
+
+        class App extends React.Component {
+          constructor(props) {
+            super(props);
+          }
+          
+          render() {
+            return (
+              <h1>Hello World</h1>
+            );
+          }	
+        }
+
+        export default App; 
         --------------------------------
 
 STEP 3:
@@ -109,4 +109,4 @@ STEP 3:
   * In a new terminal tab, run ' live-server '.
 
 
-Done! The folder 'New_Pebwack_Project' will have all modules/dependencies fully loaded.  Inside, src/components/app.jsx contains "Hello World". Change the root folder to your app name, and repeat Step 3 when you want to run your app.
+Done! The folder 'New_Pebwack_Project' will have all modules/dependencies fully loaded.  Inside, src/components/app.jsx contains "Hello World". Change the root folder to your app name, and repeat Step 3 to run your app.
